@@ -1,16 +1,28 @@
-# quiz_java
+# 🎯 Quiz Java - Flutter App
 
-A new Flutter project.
+Este é um aplicativo de **quiz sobre Java** desenvolvido com **Flutter**, com uma interface simples e intuitiva. Ideal para iniciantes que desejam revisar conhecimentos de programação Java de forma prática e divertida.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+- Apresenta uma tela inicial com botão "JOGAR"
+- Exibe o logo do aplicativo
+- Navegação para tela de perguntas (em desenvolvimento)
+- Estrutura pronta para expandir o quiz com:
+  - Perguntas de múltipla escolha
+  - Verificação de acertos/erros
+  - Pontuação final
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧠 Tecnologias Utilizadas
+
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/)
+- Material Design
+
+---
+
+
+
