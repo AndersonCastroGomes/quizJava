@@ -1,6 +1,6 @@
 name: quiz_java
 description: "A new Flutter project."
-publish_to: 'none' # Remove esta linha se quiser publicar no pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -10,22 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # Ícones no estilo iOS
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # Conjunto de boas práticas para código Flutter
   flutter_lints: ^5.0.0
 
 flutter:
-
-  # Inclui os ícones do Material Design
   uses-material-design: true
 
-  # Adiciona arquivos de imagem ao projeto
   assets:
     - assets/img/logo.png
