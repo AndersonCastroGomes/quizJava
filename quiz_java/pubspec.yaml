@@ -24,4 +24,5 @@ flutter:
   assets:
     - assets/img/logo.png
     - assets/img/animacao.json
-    - assets/img/animacaoFim.json
+    - assets/img/animacaoVitoria.json
+    - assets/img/animacaoDerrota.json

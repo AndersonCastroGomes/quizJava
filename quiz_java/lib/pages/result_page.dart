@@ -11,10 +11,17 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int erros = total - acertos;
+    double percentual = (acertos / total) * 100;
+
+    // Escolhe a animação com base no desempenho
+    String animacao = percentual < 50
+        ? 'assets/img/animacaoDerrota.json'
+        : 'assets/img/animacaoVitoria.json';
+
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 244, 234, 218), // Fundo bege
+      backgroundColor: Color.fromARGB(255, 244, 234, 218),
       appBar: AppBar(
-        backgroundColor: Color(0xFF6F4E37), // Marrom café
+        backgroundColor: Color(0xFF6F4E37),
         title: Text('Resultado', style: TextStyle(color: Colors.white)),
         centerTitle: true,
         iconTheme: IconThemeData(color: Colors.white),
@@ -25,9 +32,9 @@ class ResultPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Animação final
+              // Animação de acordo com desempenho
               Lottie.asset(
-                'assets/img/animacaoFim.json',
+                animacao,
                 height: 250,
                 repeat: true,
                 animate: true,
@@ -53,8 +60,8 @@ class ResultPage extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF6F4E37), // Marrom café
-                    foregroundColor: Colors.white, // Texto branco
+                    backgroundColor: Color(0xFF6F4E37),
+                    foregroundColor: Colors.white,
                     textStyle: TextStyle(fontSize: 20),
                   ),
                   onPressed: () => Navigator.pushReplacement(
