@@ -1,4 +1,3 @@
-// lib/data/questions.dart
 final List<Map<String, dynamic>> questions = [
   {
     "pergunta": "Qual é o tipo de dado usado para números inteiros em Java?",
